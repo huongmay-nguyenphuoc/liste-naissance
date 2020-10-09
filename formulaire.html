@@ -3,20 +3,82 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Liste de naissance</title>
+    <title>Formulaire - Liste de naissance</title>
+    <link rel="stylesheet" href="liste.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="flex" id="bodyFormulaire">
 
-    <header></header>
-
-
-    <main>
-
-
+    <header class="flex">
+        <h1>Cosmos</h1>
+        <h3>Liste de naissance</h3>
+    </header>
 
 
+    <main class="flex">
 
+        <section>
+            <p>J'ai oublié quelque chose ? Quelle tête de linotte... </p>
+        </section>
+
+        <section>
+            <form method"" >
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom article">
+                </div>
+
+                <div>
+
+                    <label for="statut">Statut</label>
+
+                    <select name="statut" id="statut">
+                        <option value="urgent">urgent</option>
+                        <option value="acheté">acheté</option>
+                        <option value="sélectionné">sélectionné</option>
+                        <option value="normal">normal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pic">Image</label>
+                    <input type="file" id="pic" name="pic">
+
+                </div>
+
+                <div>
+                    <label for="description">Description</label>
+
+                    <textarea id="description" name="description">
+            </textarea>
+                </div>
+
+                <div>
+                    <label for="categorie">Catégorie</label>
+
+                    <select name="categorie" id="categorie">
+                        <option value="sortie">sortie</option>
+                        <option value="éveil">éveil</option>
+                        <option value="repas">repas</option>
+                        <option value="sommeil">sommeil</option>
+                        <option value="toilette">toilette</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="url">Lien de l'article</label>
+                    <input type="url" id="url" name="url">
+                </div>
+
+
+                <div>
+                   <a href="liste.html">Envoyer</a>
+                </div>
+            </form>
+
+        </section>
     </main>
 
 

@@ -4,10 +4,11 @@
 }
 
 body {
+    min-height: 100vh;
     color: white;
     font-family: 'Bubbler One', sans-serif;
     background-color: black;
-    min-height: 100vh;
+    
 }
 
 main {
@@ -19,12 +20,13 @@ main {
     display: flex;
 }
 
+
 /*HEADER*/
 header {
     flex-direction: column; 
     max-width: 20vw;
-    padding: 20px;
     max-height: 100%;
+    padding: 20px;
     background-image: url(https://i.pinimg.com/originals/7c/df/28/7cdf28f275c30afcca80768e3c6a9b13.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -80,6 +82,10 @@ th {
 }
 
 
+.image {
+    width: 20%;
+}
+
 
 /*EFFETS HOVER
     lien
@@ -113,10 +119,6 @@ a {
         background-color: rgba(255,255,255,0.2);
     }
 
-
-.image {
-    width: 20%;
-}
 
     .image img {
         height: 0px;
@@ -194,6 +196,8 @@ a {
     background-color: #EDD9C1;
 }
 
+
+
 /*FORMULAIRE*/
 
 
@@ -234,12 +238,12 @@ input, textarea {
     outline: none;
     border: none;
     border-bottom: 1px solid #EDD9C1;
-    font-size: 100%;
+     padding: 15px;
+    margin-bottom: 20px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 15px;
+    font-size: 100%;
     color: white;
-    margin-bottom: 20px;
     font-family: 'Bubbler One', sans-serif;
 }
 
@@ -253,9 +257,4 @@ select {
 
     input:focus, textarea:focus {
         background-color: rgba(255,255,255,0.2);
-    }
-
-    button {
-
-
     }

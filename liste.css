@@ -1,0 +1,142 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Bubbler One', sans-serif;
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+/*HEADER*/
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(https://i.pinimg.com/originals/7c/df/28/7cdf28f275c30afcca80768e3c6a9b13.jpg);
+    
+    background-position: center;
+    height: 100%;
+    color: white;
+    font-family: 'Euphoria Script', cursive;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    width: 20vw;
+    text-shadow: 0 0 10px white;
+    
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h3 {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+/*TABLEAU*/
+
+table {
+   border-collapse: collapse;
+    width: 70vw;
+    margin: 5%;
+    position: relative;
+}
+
+.titre {
+    border-bottom: 1px solid #EDD9C1;
+}
+
+td {
+    color: #EDD9C1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+th {
+    padding-top: 40px;
+    font-weight: bold;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 1.6em;
+}
+
+.entete {
+    color: #EDD9C1;
+    border-bottom: 1px solid #EDD9C1;
+    background-color: black;
+    
+}
+
+a {
+    color: #EDD9C1;
+}
+
+a:hover {
+    color: white;
+}
+.item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: 1s;
+    overflow: hidden;
+    opacity: 0;
+    position: relative;
+    height: 0px;
+}
+
+    .item:hover {
+        height: 300px;
+        opacity: 1;
+        border-bottom: 1px solid #EDD9C1;
+        background-color: rgba(255,255,255,0.2);
+    }
+
+
+        .item:hover .image img {
+            opacity: 1;
+            height: 100px;
+        }
+
+
+        .description {
+           
+        }
+
+    .image {
+        position: relative;
+        width: 20%;
+        
+    }
+        .image img {
+   height: 0px;
+   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  transition: 1s;
+  opacity: 0;
+
+}
+
+
+/*STATUT*/
+.urgent {
+    color: red;
+}
+
+.acheté {
+    color: grey;
+}
+
+.selectionné {
+    color: #EDD9C1;
+}
+
+.normal {
+    color: white;
+}
